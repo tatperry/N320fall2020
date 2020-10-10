@@ -1,0 +1,49 @@
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  padding-left: 50px;
+  color: navy;
+}
+.blue-box {
+  width: 100%;
+  height: 150px;
+  background-color: navy;
+}
+/* Three image containers */
+.column1 {
+  float: left;
+  width: 450px;
+  height: 210px;
+  margin-left: 100px;
+  background-color: purple;
+}
+
+/* Three image containers */
+.column2 {
+  float: left;
+  width: 450px;
+  height: 210px;
+  margin-left: 100px;
+  margin-top: 60px;
+  background-color: purple;
+}
+
+.row1::hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.row2::hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
