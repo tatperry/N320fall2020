@@ -1,0 +1,67 @@
+/* 
+Tatiana Perry
+  NEWM-N320 - Project 1
+  Tic Tac Toe Board Game 
+  October 30, 2020
+*/
+
+/* HTML STYLES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: radial-gradient(red, yellow);
+  height: 120vh;
+  width: 100vw;
+}
+/* TITLE STYLES FOR WHO IS PLAYING AND WHO WINS */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* THE GAME BOARD */
+.square:hover {
+  cursor: pointer;
+  /* stroke: white; */
+  stroke-width: 0.5px;
+  stroke-dasharray: 1;
+}
+/* WHOS TURN IT IS  */
+#turn {
+  order: 1;
+  font-size: 4em;
+  margin: 40px;
+}
+/* BUTTON STYLINGS  */
+#reset-btn {
+  font-size: 2em;
+  order: 3;
+  padding: 20px 30px;
+  margin-top: 40px;
+  border: 1px solid #111;
+  background: transparent;
+  color: #111;
+  border-radius: 20px;
+}
+
+#reset-btn:hover {
+  border: 1px solid white;
+  background: white;
+}
+/* styles for grid */
+#grid {
+  order: 2;
+}
+/* styles for "X" if no one has clicked on it yet */
+path.cross {
+  opacity: 0;
+}
+/* styles for "O" if no one has clicked on it yet */
+circle.circle {
+  opacity: 0;
+}
